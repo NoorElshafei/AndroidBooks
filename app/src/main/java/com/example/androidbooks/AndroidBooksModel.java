@@ -1,21 +1,24 @@
 package com.example.androidbooks;
 
 public class AndroidBooksModel {
-    private String bookName,bookPic,bookLanguage,bookAuthor,bookCurrency;
-    private double bookPrice;
+    private String bookName,bookPic,bookLanguage,bookAuthor,bookLink,bookPrice;
 
-    public AndroidBooksModel(String bookName, String bookPic, String bookLanguage, String bookAuthor, double bookPrice,String bookCurrency) {
+
+    public AndroidBooksModel(String bookName, String bookPic, String bookLanguage, String bookAuthor, String bookPrice,String bookLink) {
         this.bookName = bookName;
         this.bookPic = bookPic;
         this.bookLanguage = bookLanguage;
         this.bookAuthor = bookAuthor;
         this.bookPrice = bookPrice;
-        this.bookCurrency=bookCurrency;
+
+        this.bookLink=bookLink;
     }
 
-    public String getBookCurrency() {
-        return bookCurrency;
+
+    public String getBookLink() {
+        return bookLink;
     }
+
 
     public String getBookName() {
         return bookName;
@@ -33,7 +36,7 @@ public class AndroidBooksModel {
         return bookAuthor;
     }
 
-    public double getBookPrice() {
+    public String getBookPrice() {
         return bookPrice;
     }
 }
